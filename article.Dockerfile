@@ -9,7 +9,7 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY . .
 
-RUN npm config set registry https://registry.npm.taobao.org
-RUN npm install --only=production
+RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN cnpm install --only=production
 
 CMD [ "node", "article.js" ]

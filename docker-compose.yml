@@ -6,3 +6,7 @@ services:
     vinda-fetch-article:
       image: registry-vpc.cn-shenzhen.aliyuncs.com/vinda/vinda-fetch-article:1.0.0
       container_name: vinda-fetch-article
+networks:
+  default:
+    external:
+      name: database_default
