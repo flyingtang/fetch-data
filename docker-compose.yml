@@ -1,0 +1,8 @@
+version: "2"
+services:
+    vinda-fetch-video:
+      image: registry-vpc.cn-shenzhen.aliyuncs.com/vinda/vinda-fetch-video:1.0.0
+      container_name: vinda-fetch-video
+    vinda-fetch-article:
+      image: registry-vpc.cn-shenzhen.aliyuncs.com/vinda/vinda-fetch-article:1.0.0
+      container_name: vinda-fetch-article

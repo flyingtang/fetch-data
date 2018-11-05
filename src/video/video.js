@@ -2,7 +2,7 @@ const fs = require("fs")
 const request = require('superagent')
 const Nightmare = require('nightmare')
 const path = require("path")
-const constant  =require("../config/config.json") 
+const constant  =require("../config/config") 
 const {sleep, randomString}  = require("../utils/util")
 const connection = require("../index")
 /**
