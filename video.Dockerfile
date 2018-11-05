@@ -8,7 +8,7 @@ RUN apk update && apk add python make tzdata \
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY . .
-
+#  为了快
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 RUN cnpm install --only=production
 
