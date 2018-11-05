@@ -1,0 +1,23 @@
+{
+  "name": "vinda-source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "video": "node video.js",
+    "article": "node article.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "download": "^7.1.0",
+    "md5": "^2.2.1",
+    "mysql": "^2.16.0",
+    "nightmare": "^3.0.1",
+    "request": "^2.88.0",
+    "superagent": "^4.0.0-beta.5",
+    "uuid": "^3.3.2"
+  }
+}
