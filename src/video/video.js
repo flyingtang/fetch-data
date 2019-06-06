@@ -76,7 +76,8 @@ function videoSaveDatabase(data = {}) {
             fileName = randomString()
             const fp = path.join(constant.videoDir, fileName);
             console.log(fp, "文件路径")
-            request(contentUrl).on('error', function (err) {
+            
+            request("http:"+contentUrl).on('error', function (err) {
                 console.log("出错了")
                 resolve()
             }).pipe(fs.createWriteStream(fp, {mode: 0666})).on('finish', () => {
